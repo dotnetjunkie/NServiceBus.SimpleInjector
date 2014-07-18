@@ -19,6 +19,8 @@ namespace ObjectBuilder.SimpleInjector.AcceptanceTests
         public void SetUp()
         {
             builder = new SimpleInjectorObjectBuilder();
+
+            this.InitializeBuilder()(builder);
         }
 
         [TearDown]
